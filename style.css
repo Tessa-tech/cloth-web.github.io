@@ -294,7 +294,7 @@ section{
 
 }
 .news form input[type="submit"].btn{
-    height: 50px;
+    height: 30px;
     position: absolute;
     right: 5px;
 }
