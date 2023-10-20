@@ -76,7 +76,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../tessa/IMG_2575.JPG);
+    background: var(--background);
     background-position: center; 
     background-size: cover;
    
@@ -91,13 +91,13 @@ section{
         transform: translateY(0px);
     }
     25%{
-        transform: translateX(20px);
+        transform: translateY(-20px);
     }
     50%{
-        transform: translateX(-30px);
+        transform: translateX(30px);
     }
     100%{
-        transform: translateY(40px);
+        transform: translateY(-40px);
     }
 }
 .home .content h3{
@@ -120,7 +120,7 @@ section{
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
-    color: rgba(212, 208, 208, 0.842);
+    color: white;
     cursor: pointer;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.89);
     transition: all .3s linear;
@@ -132,7 +132,7 @@ section{
 .head{
     text-align: center;
     background: var(--background);
-    color: var(--text-color);
+    color: black;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 40px;
@@ -220,6 +220,9 @@ section{
 .product .box:hover{
     transform: scale(1.1);
 }
+.blog{
+    margin-top: 2rem;
+}
 .blog .container .box{
     flex: 1 1 20rem;
     background: white;
@@ -251,7 +254,7 @@ section{
 .news{
     text-align: center;
     padding: 5rem 1rem;
-    background: url(../tessa/IMG_2576.JPG) center/cover;
+    background: var(--background);
    
 }
 .news h3{
@@ -399,7 +402,7 @@ section{
 }
 .footer{
     padding: 3rem;
-    background-image: url(../tessa/IMG_2577.JPG);
+    background: var(--background);
     background-size: cover;
     background-position: center;
    
@@ -576,21 +579,17 @@ header label{
     }
     section.home#home{
         flex-direction: column-reverse;
-        width: 150%;
+        
     }
     section.home#home .image img{
         width: 60%;
 
     }
-    .news{
-        width: 150%;
-    }
+    
     section.home#home .content h3{
         font-size: 3.6rem;
     }
-    .footer{
-        width: 150%;
-    }
+    
     section.home#home .content p{
         font-size: 1.6rem;
     }
@@ -608,9 +607,8 @@ header label{
     }
     .footer{
         padding: 3rem;
-        background-image: url(../tessa/IMG_2577.JPG);
-        background-size: cover;
-        background-position: center;
+        background: var(--background);
+        
        
     }
     
