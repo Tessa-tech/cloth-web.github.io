@@ -6,7 +6,7 @@
 }
 html{
      font-size: 62.5%; 
-    overflow-x: hidden; 
+    overflow-x: scroll; 
 }
 *{
     margin: 0px;
@@ -28,19 +28,21 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;  
     height: 65px;
     background-color: var(--background);
     box-shadow: 1rem 0.5rem 1rem rgba(3, 3, 3, 0.904);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     z-index: 10;
     padding: 0px 5%; 
+    gap: 30px;
 }
 header .name{
     color: var(--text-color);
     font-size: 25px;
+    font-weight: bold;
     
 }
 header .nav ul{
@@ -53,7 +55,6 @@ header .nav ul li{
 
 }
 header .nav a{
-    height: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 18px;
@@ -77,6 +78,7 @@ section{
     align-items: center;
     justify-content: center;
     background: var(--background);
+    position: sticky;
     background-position: center; 
     background-size: cover;
    
@@ -113,7 +115,7 @@ section{
     padding: 5px;
     font-weight: 500;
 }
-.btn{
+.btns{
     display: inline-block;
     margin-top: 5px;
     padding: 10px 5px;
@@ -122,11 +124,12 @@ section{
     font-size: 18px;
     font-weight: bold;
     color: white;
+    text-decoration: none;
     cursor: pointer;
     box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.89);
     transition: all .3s linear;
 }
-.btn:hover{
+.btns:hover{
     transform: scale(1.1);
     color: black;
 }
@@ -293,10 +296,12 @@ section{
     width: 100%;
 
 }
-.news form input[type="submit"].btn{
-    height: 30px;
+.news form input[type="submit"].btns{
+    height: 40px;
     position: absolute;
     right: 5px;
+    color: white;
+    bottom: 2px;
 }
 .review .contain-review{
     display: flex;
@@ -546,17 +551,22 @@ header label{
         opacity: 1;
         align-items: center;
     }
+    section{
+        padding: 0px 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
     header{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; 
         height: 65px;
         background-color: var(--background);
         box-shadow: 1rem 0.5rem 1rem rgba(3, 3, 3, 0.904);
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         z-index: 10;
         padding: 0px 5%; 
     }
@@ -583,13 +593,22 @@ header label{
     }
     section.home#home{
         flex-direction: column-reverse;
+        overflow: scroll;
+        width: 150%;
         
     }
     section.home#home .image img{
         width: 60%;
 
     }
-    
+    .news{
+        width: 150%;
+        overflow: scroll;
+    }
+    .footer{
+        width: 150%;
+        overflow: scroll;
+    }
     section.home#home .content h3{
         font-size: 3.6rem;
     }
@@ -604,10 +623,10 @@ header label{
         width: 100%; 
     }
     .news form input[type="submit"].btn{
-        height: 35px;
+        height: 20px;
         position: absolute;
         right: 5px;
-        bottom: 5px;
+        bottom: 3px;
     }
     .footer{
         padding: 3rem;
