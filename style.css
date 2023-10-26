@@ -104,13 +104,15 @@ section{
 }
 .home .content h3{
     font-size: 40px;
+    padding-right: 8rem;
     font-weight: bold;
     color: var(--text-color);
     text-transform: uppercase;
     
 }
 .home .content p{
-    font-size: 20px;
+    font-size: 25px;
+    padding-right: 8rem;
     color: white;
     padding: 5px;
     font-weight: 500;
@@ -178,7 +180,7 @@ section{
     padding: 1rem 0;
     line-height: 30px;
     font-weight: bold;
-    display: inline;
+    /* display: inline; */
 }
 .product .container{
     display: flex;
@@ -201,8 +203,10 @@ section{
     
 }
 .product .box img{
-    height: 12rem;
+    height: 13rem;
     width: 15rem;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 .blog .container{
     display: flex;
@@ -346,9 +350,6 @@ section{
 .review .contain-review .box .user h3{
     color: var(--background);
     font-size: 22px;
-}
-.review .contain-review .box .user p{
-    /* font-size: 20px; */
 }
 .review .contain-review .box .user .reviews{
     display: inline;
@@ -593,9 +594,27 @@ header label{
     }
     section.home#home{
         flex-direction: column-reverse;
-        overflow: scroll;
-        width: 150%;
+        /* overflow: scroll; */
+        width: 150%; 
         
+    }
+    section.home#home .content {
+        width: 100%;
+        padding: 0rem 3rem;
+    }
+    section.home#home .content h3{
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--text-color);
+        text-transform: uppercase;
+        
+    }
+    section.home#home .content p{
+        font-size: 25px;
+        width: 300px;
+        color: white;
+        padding: 5px;
+        font-weight: 500;
     }
     section.home#home .image img{
         width: 60%;
@@ -604,6 +623,9 @@ header label{
     .news{
         width: 150%;
         overflow: scroll;
+    }
+    .news .news-sub{
+        width: 100%;
     }
     .footer{
         width: 150%;
@@ -619,9 +641,7 @@ header label{
     section.about{
         background-position: right;
     }
-    .news p{
-        width: 100%; 
-    }
+
     .news form input[type="submit"].btn{
         height: 20px;
         position: absolute;
@@ -633,6 +653,58 @@ header label{
         background: var(--background);
         
        
+    }
+    .news .news-sub h3{
+        color: var(--text-color);
+        font-size: 25px;
+        width: 45rem;
+        text-transform: uppercase;
+        margin-left: 0rem;
+    }
+    .news .news-sub p{
+        color: #fff;
+        font-size: 20px;
+        margin: 1rem;
+        width: 45rem;
+        margin-left: 0rem;
+    }
+    .news form{
+        display: flex;
+        max-width: 45rem;
+        margin-left: 0rem;
+        border: 2px solid white;
+        padding: .5rem;
+        border-radius: 20px;
+        margin: 2rem;
+        height: 5rem;
+        position: relative;
+        
+    }
+    .news form input[type="email"]::placeholder{
+        color: #fff;
+        text-transform: capitalize;
+       
+    }
+    .news form input[type="email"]{
+        padding: 0 2rem;
+        background: none;
+        /* color: white; */
+        font-size: 18px;
+        width: 100%;
+    
+    }
+    .news form input[type="submit"].btns{
+        height: 35px;
+        position: absolute;
+        right: 5px;
+        color: white;
+        bottom: 2px;
+    }
+    .product .box img{
+        height: 28rem;
+        width: 30rem;
+        border: 3px solid black;
+        border-radius: 10px;
     }
     
     
